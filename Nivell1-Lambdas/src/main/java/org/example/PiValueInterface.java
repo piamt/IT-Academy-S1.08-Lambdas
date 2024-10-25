@@ -1,6 +1,6 @@
 package org.example;
 
 @FunctionalInterface
-public interface MyFunctionalInterface {
+public interface PiValueInterface {
     double getPiValue();
 }

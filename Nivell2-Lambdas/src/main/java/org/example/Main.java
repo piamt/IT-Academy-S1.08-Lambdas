@@ -44,8 +44,7 @@ public class Main {
         System.out.println("\nSorted by containing 'e' first");
         multiTypeList.stream()
                 .sorted(Comparator.comparing(s -> {
-                    if (s.contains("e")) return 1;
-                    else  return 2;
+                    return s.contains("e") ? 1 : 2;
                 }))
                 .forEach(System.out::println);
 
